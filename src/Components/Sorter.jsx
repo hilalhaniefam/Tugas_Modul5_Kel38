@@ -32,19 +32,22 @@ const Sorter = () => {
 
   return (
     <div>
-      Urut Berdasarkan:
+      <h3>Urut Berdasarkan:</h3>
       <select onChange={handleChangeSort}>
         <option value="title">Nama</option>
         <option value="price">Harga</option>
       </select>
       <select onChange={handleChangeOrder}>
-        <option value="asc">Menaik (ASC)</option>
-        <option value="desc">Menurun (DESC)</option>
+        <option value="asc">Asc</option>
+        <option value="desc">Desc</option>
       </select>
+      
       {isFetching && <p>Loading...</p>}
+      <div>
       {sortedProducts.map((item) => (
         <ProductCard key={item.id} product={item} />
       ))}
+      </div>
     </div>
   );
 };
