@@ -15,19 +15,19 @@ const ProductCard = (props) => {
         src={props.product.image}
         alt={props.product.title}
         style={{
-          height: 256,
+          height: 240,
         }}
       />
       <h3>{props.product.title}</h3>
-      <button onClick={handleBukaDeskripsi}>Lihat deskripsi</button>
+      <button onClick={handleBukaDeskripsi}>Lihat deskripsi paket</button>
       <Modal isOpen={showDesc}>
         <div>
-          <b>Deskripsi produk :</b>
+          <b>Deskripsi Paket :</b>
           <p>{props.product.description}</p>
           <button onClick={handleTutupDeskripsi}>Tutup</button>
         </div>
       </Modal>
-      <p>Harga : {props.product.price} USD</p>
+      <p>Harga : RP {props.product.price} </p>
     </div>
   );
 };

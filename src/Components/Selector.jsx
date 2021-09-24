@@ -35,7 +35,7 @@ const Selector = () => {
             ))}
           </ul>
         )}
-        {!isFetching && <p>{productState.selectedCategory} terpilih</p>}
+        {!isFetching && <p>{productState.selectedCategory}</p>}
       </div>
       <Sorter />
     </div>
