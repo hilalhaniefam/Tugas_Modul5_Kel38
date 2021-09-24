@@ -44,9 +44,11 @@ const Sorter = () => {
       
       {isFetching && <p>Loading...</p>}
       <div>
-      {sortedProducts.map((item) => (
-        <ProductCard key={item.id} product={item} />
-      ))}
+        <div className="grid-container">
+          {sortedProducts.map((item) => (
+          <ProductCard key={item.id} product={item} />
+        ))}
+        </div>
       </div>
     </div>
   );

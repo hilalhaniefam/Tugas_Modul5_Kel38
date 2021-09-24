@@ -18,19 +18,17 @@ const Selector = () => {
 
   return (
       <div>
-          {!isFetching && <h3 style={{textTransform: "uppercase"}}>Kategori : {productState.selectedCategory}</h3>}
+          {!isFetching && <h2 style={{textTransform: "uppercase"}}>Kategori : {productState.selectedCategory}</h2>}
         {isFetching ? (
           <b>Loading...</b>
           ) : (
-            <ul>
+          <ul>
             {productState.categories.map((category, index) => (
               <button
               key={index}
               name={category}
               onClick={handleCategoryButton}
-              >
-                {category}
-              </button>
+              >{category}</button>
             ))}
           </ul>
         )}

@@ -2,21 +2,18 @@ select {
   background-color: rgb(255, 255, 255);
   color: rgb(5, 5, 5);
   padding: 12px;
-  width: 250px;
+  width: 120px;
   border: none;
-  font-size: 20px;
-  -shadow: 0 5px 25px rgba(209, 53, 53, 0.2);
-  -webkit-appearance: button;
-  appearance: button;
+  font-size: 15px;
   outline: none;
   margin: 10px;
   border-radius: 10px;
 }
 
 select:hover {
-  background-color: rgb(204, 49, 49);
+  background-color: rgb(233, 190, 190);
 }
 select option {
-  padding: 30px;
-  background-color: rgb(196, 55, 55);
+  padding: 10px;
+  background-color: rgb(151, 33, 33);
 }
