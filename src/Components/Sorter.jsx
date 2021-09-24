@@ -32,7 +32,7 @@ const Sorter = () => {
 
   return (
     <div>
-      Urutkan berdasarkan :
+      Urut Berdasarkan:
       <select onChange={handleChangeSort}>
         <option value="title">Nama</option>
         <option value="price">Harga</option>
